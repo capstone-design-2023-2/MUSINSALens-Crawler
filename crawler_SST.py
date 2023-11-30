@@ -7,7 +7,7 @@ from urllib.parse import urljoin
 import mysql.connector
 
 PAGE_NUMBER_LIMIT = 2
-BASE_URL = 'https://www.musinsa.com/ranking/best?period=now&age=ALL&golf=false&kids=false&newProduct=false&exclusive=false&discount=false&soldOut=false&page=1&viewType=small&mainCategory=001&subCategory='
+BASE_URL = 'https://www.musinsa.com/ranking/best?period=now&age=ALL&golf=false&kids=false&newProduct=false&exclusive=false&discount=false&soldOut=false&&viewType=small&mainCategory=001&subCategory='
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
 IMAGE_DIR = 'images'
 
@@ -226,11 +226,11 @@ def main():
                     # '001006', '001004', '001010', '001005', '001002', # long_sleeve_top
                     # '002021', # vest
                     # '001011', # sling
-                    # '002022','002001','002002','002025','002017','002003','002020','002019','002023','002018','002004','002008','002007','002024','002009','002013','002012','002014','002006' # long_sleeve_outwear
-                    '003009' # shorts
+                    # '002023','002007','002025','002002','002012',  # '002022','002001','002017','002003','002020','002019','002018','002004','002008','002024','002009','002013','002014','002006' # long_sleeve_outwear
+                    # '003009' # shorts
                     # '003002','003007','003008','003004','003011', # trousers
-                    # '022001','022002','022003', # skirt
-                    # '020006','020007','020008' # short_sleeve_dress
+                    # '022001','022002', '022003', # skirt
+                    # '020006','020007', '020008' # dress 
                     ]
 
     for sub_category in sub_categories:
